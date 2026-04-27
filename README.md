@@ -1,5 +1,11 @@
 # CraigClaw — Personal AI Intelligence Platform
 
+<p align="center">
+  <img src="logo.jpg" alt="CraigClaw Logo" width="200"/>
+</p>
+
+---
+
 ## Overview
 
 CraigClaw is a personal AI intelligence platform designed to turn fragmented inputs into clear, decision-ready insight.
@@ -36,22 +42,20 @@ CraigClaw combines local infrastructure with cloud-based reasoning:
 * **Interfaces:** Telegram (control surface), Email (delivery)
 * **Scheduling:** Cron and LaunchAgent
 
-This approach keeps ingestion and preprocessing local, while reserving cloud usage for higher-order reasoning.
-
 ---
 
 ## System Architecture
 
-```id="o3rm3x"
+```id="arch1"
 Inputs (Gmail → RSS soon)
    ↓
-Ellie Agent (signal ingestion + filtering)
+Ellie (signal ingestion + filtering)
    ↓
 Local Models (Qwen via Ollama)
    ↓
 Structured Signal Candidates
    ↓
-Fermi Agent (judgment, verification, synthesis)
+Fermi (judgment, verification, synthesis)
    ↓
 “What Actually Matters”
    ↓
@@ -60,7 +64,11 @@ Delivery (Telegram → Email)
 
 ---
 
-## Multi-Agent System
+## Agent Ecosystem
+
+<p align="center">
+  <img src="CraigClawCrew_4.26.26.png" alt="CraigClaw Agent Roster" width="700"/>
+</p>
 
 CraigClaw operates as a coordinated set of specialized agents, each responsible for a distinct layer of the workflow.
 
@@ -68,31 +76,28 @@ CraigClaw operates as a coordinated set of specialized agents, each responsible 
 
 * Ingests and filters inputs
 * Applies deterministic rules to reduce noise
-* Produces structured candidates for downstream processing
+* Produces structured candidates
 
 ### Fermi — Orchestrator and Judgment Layer
 
 * Evaluates candidate signals
-* Applies prioritization and ranking
-* Verifies and synthesizes final output
-* Produces the daily brief
+* Prioritizes and ranks outputs
+* Verifies and synthesizes final brief
 
 ### Memory Layer
 
-* Stores prior signals, patterns, and context
-* Uses local embeddings (Ollama) for retrieval
+* Stores signals and context over time
+* Uses local embeddings (Ollama)
 * Enables continuity across days
 
 ### Emerging Agents
-
-Introduced in phases:
 
 * **Cato** — communication drafting and structured outputs
 * **Simons** — domain and market intelligence
 * **Woz** — execution and simplification layer
 * **Leo** — coordination across agents and workflows
 
-The platform is evolving toward a distributed model where agents specialize and collaborate rather than relying on a single general-purpose system.
+The system is evolving toward a distributed model where agents specialize and collaborate.
 
 ---
 
@@ -112,7 +117,7 @@ Each brief reflects data quality and sourcing.
 
 ### Hybrid Approach
 
-Deterministic logic is used where rules are stable; AI is used for interpretation and judgment.
+Deterministic logic where rules are stable; AI where judgment is required.
 
 ### Gradual Automation
 
@@ -138,11 +143,11 @@ Capabilities are introduced in stages, with validation at each layer.
 
 Each briefing includes:
 
-* **Today’s Signal** — the central underlying shift
-* **Top Signals** — the most important developments
-* **What’s Changed** — directional changes
-* **What to Watch** — forward-looking signals
-* **System Status** — data quality and recency
+* **Today’s Signal**
+* **Top Signals**
+* **What’s Changed**
+* **What to Watch**
+* **System Status**
 
 ---
 
@@ -155,16 +160,12 @@ Each briefing includes:
 * Verification layer
 * Email delivery (manual → scheduled)
 
----
-
 ### Phase 6 — System Maturation
 
 * System health monitoring
 * Secure remote access
 * Memory consolidation
 * Execution layer (Woz)
-
----
 
 ### Phase 7 — Intelligence Expansion
 
@@ -173,21 +174,19 @@ Each briefing includes:
 * Cross-agent coordination (Leo)
 * Internal knowledge system
 
----
-
 ### Phase 8 — Extended Interface
 
 * Voice interaction
 * Mobile-first experience
-* Expanded automation capabilities
+* Expanded automation
 
 ---
 
 ## Strategic Perspective
 
-CraigClaw is designed to operate closer to the point where information becomes usable.
+CraigClaw operates closer to the point where information becomes usable.
 
-Rather than stopping at summarization, it emphasizes:
+The system emphasizes:
 
 * prioritization
 * synthesis
