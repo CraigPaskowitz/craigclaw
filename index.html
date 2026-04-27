@@ -1,378 +1,254 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
-<!--
-   ______                            __
-  / ____/___  ____ ___  ____  __  __/ /____  _____
- / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
-\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
-                    /_/
-        Created with Perplexity Computer
-        https://www.perplexity.ai/computer
--->
-
-<!-- Perplexity Computer Attribution — SEO Meta Tags -->
-<meta name="generator" content="Perplexity Computer">
-<meta name="author" content="Perplexity Computer">
-<meta property="og:see_also" content="https://www.perplexity.ai/computer">
-<link rel="author" href="https://www.perplexity.ai/computer">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Craig Claw — Personal AI Operating System</title>
-<meta name="description" content="Craig Claw is a personal AI operating system for continuous learning, productivity, and skill-building in the age of AI. Built by Craig Paskowitz.">
-<meta property="og:title" content="Craig Claw — Personal AI Operating System">
-<meta property="og:description" content="A system for compounding intelligence — built at the intersection of financial services, AI product management, and relentless curiosity.">
-
-<!-- Fonts -->
-<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
-
-<!-- Styles -->
-<link rel="stylesheet" href="./base.css">
-<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CraigClaw — Personal AI Intelligence Platform</title>
+  <meta name="description" content="CraigClaw is a personal AI intelligence platform built on OpenClaw and hosted on a dedicated Mac mini to produce a daily brief called What Actually Matters.">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== NAV ===== -->
-<nav class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="#hero" class="nav__logo" aria-label="Craig Claw home">
-      <img src="./logo.jpg" alt="Craig Claw logo" class="nav__logo-img" width="36" height="36">
-      <span>Craig Claw</span>
-    </a>
-    <div class="nav__links">
-      <a href="#about">About</a>
-      <a href="#abilities">Abilities</a>
-      <a href="#philosophy">Philosophy</a>
-      <a href="#workflows">Workflows</a>
-      <a href="#lab">Lab</a>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top">
+        <img src="./logo.jpg" alt="CraigClaw platform logo" width="44" height="44">
+        <span>CraigClaw</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" data-menu-toggle>Menu</button>
+      <div class="nav-links" id="nav-menu">
+        <a href="#positioning">Platform</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#ecosystem">Agent Ecosystem</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#governance">Governance</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">Theme</button>
+      </div>
+    </nav>
+
+    <section class="hero container" id="main">
+      <div class="hero-copy">
+        <p class="eyebrow">Personal AI Intelligence Platform</p>
+        <h1>CraigClaw</h1>
+        <p class="hero-subtitle">CraigClaw turns fragmented inputs into clear, decision-ready intelligence. Built on OpenClaw and hosted on a dedicated Mac mini, it runs as an always-on local-first system with cloud reasoning only where judgment is needed.</p>
+        <p class="hero-output">Daily Output: <strong>“What Actually Matters”</strong></p>
+        <div class="hero-points" role="list" aria-label="Core emphasis">
+          <span role="listitem">Selectivity</span>
+          <span role="listitem">Context</span>
+          <span role="listitem">Judgment</span>
+          <span role="listitem">Signal over noise</span>
+          <span role="listitem">Controlled automation</span>
+        </div>
+      </div>
+      <div class="hero-mark">
+        <img src="./logo.jpg" alt="CraigClaw Logo" class="hero-logo">
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="positioning">
+      <div class="container">
+        <h2>What CraigClaw Is</h2>
+        <p>CraigClaw is a personal intelligence platform designed to continuously ingest, filter, and synthesize information into a concise daily brief for fast executive decision support.</p>
+        <div class="card-grid four">
+          <article class="card">
+            <h3>Signal Selection</h3>
+            <p>Surfaces highest-impact signals instead of broad information dumps.</p>
+          </article>
+          <article class="card">
+            <h3>Context Layer</h3>
+            <p>Explains why each signal matters and how it relates to prior patterns.</p>
+          </article>
+          <article class="card">
+            <h3>Judgment Layer</h3>
+            <p>Applies verification, prioritization, and synthesis before delivery.</p>
+          </article>
+          <article class="card">
+            <h3>Daily Output</h3>
+            <p>Publishes “What Actually Matters” with clear actions and watch items.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="architecture">
+      <div class="container">
+        <h2>How It Is Built</h2>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>Core Stack</h3>
+            <ul>
+              <li><strong>Framework:</strong> OpenClaw agent orchestration and command layer</li>
+              <li><strong>Host:</strong> Dedicated Mac mini for persistent local runtime</li>
+              <li><strong>Scheduling:</strong> cron + LaunchAgent</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Reasoning Stack</h3>
+            <ul>
+              <li><strong>Local models:</strong> Ollama / Qwen 2.5 for extraction and preprocessing</li>
+              <li><strong>Memory:</strong> local embeddings for continuity</li>
+              <li><strong>Cloud judgment:</strong> GPT-5.4 via Codex OAuth</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Interfaces</h3>
+            <ul>
+              <li><strong>Control:</strong> Telegram</li>
+              <li><strong>Delivery:</strong> Email</li>
+              <li><strong>Command:</strong> <code>/brief</code> for on-demand output</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="subhead">Architecture Flow</h3>
+        <ol class="flow">
+          <li>Inputs (Gmail first, RSS next)</li>
+          <li>Ellie ingests and filters signals</li>
+          <li>Local models produce structured extraction</li>
+          <li>Structured signal candidates are created</li>
+          <li>Fermi applies judgment, verification, and synthesis</li>
+          <li>“What Actually Matters” is generated</li>
+          <li>Brief is delivered through Telegram and email</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="ecosystem">
+      <div class="container">
+        <h2>Multi-Agent Ecosystem</h2>
+        <p>CraigClaw is a coordinated agent ecosystem with explicit role boundaries rather than a single assistant.</p>
+
+        <figure class="roster-figure">
+          <img src="./CraigClawCrew_4.26.26.png" alt="CraigClaw multi-agent roster showing active and planned agents" class="roster-image">
+        </figure>
+
+        <div class="card-grid two">
+          <article class="card">
+            <h3>Active</h3>
+            <ul>
+              <li><strong>Ellie — Signal Engine:</strong> ingestion, deterministic filtering, structured candidates</li>
+              <li><strong>Fermi — Orchestrator &amp; Judgment:</strong> prioritization, ranking, verification, synthesis</li>
+              <li><strong>Memory Layer:</strong> local embeddings for pattern continuity across days</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Planned / Emerging</h3>
+            <ul>
+              <li><strong>Cato:</strong> communication drafting and structured outputs</li>
+              <li><strong>Simons:</strong> domain and market intelligence</li>
+              <li><strong>Woz:</strong> execution and simplification layer</li>
+              <li><strong>Leo:</strong> coordination across agents and workflows</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="capabilities">
+      <div class="container">
+        <h2>Current Capabilities</h2>
+        <div class="card-grid three">
+          <article class="card"><p>Gmail ingestion (read-only)</p></article>
+          <article class="card"><p>Deterministic signal filtering</p></article>
+          <article class="card"><p>Local preprocessing with Qwen via Ollama</p></article>
+          <article class="card"><p>AI-driven synthesis with GPT-5.4</p></article>
+          <article class="card"><p>Daily intelligence brief generation</p></article>
+          <article class="card"><p>Telegram <code>/brief</code> command</p></article>
+          <article class="card"><p>Manual email delivery</p></article>
+          <article class="card"><p>Memory indexing with local embeddings</p></article>
+          <article class="card"><p>Always-on Mac mini runtime via LaunchAgent</p></article>
+        </div>
+
+        <h3 class="subhead">What Actually Matters Structure</h3>
+        <div class="card-grid five">
+          <article class="card"><p>Today’s Signal</p></article>
+          <article class="card"><p>Top Signals</p></article>
+          <article class="card"><p>What’s Changed</p></article>
+          <article class="card"><p>What to Watch</p></article>
+          <article class="card"><p>System Status</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="container">
+        <h2>Roadmap</h2>
+        <div class="timeline">
+          <article class="phase current">
+            <h3>Phase 5 — Signal System (Current)</h3>
+            <ul>
+              <li>High-quality daily brief</li>
+              <li>Source-aware pipeline</li>
+              <li>Verification layer</li>
+              <li>Email delivery moving from manual to scheduled</li>
+            </ul>
+          </article>
+          <article class="phase">
+            <h3>Phase 6 — System Maturation</h3>
+            <ul>
+              <li>System health monitoring</li>
+              <li>Secure remote access</li>
+              <li>Memory consolidation</li>
+              <li>Execution layer via Woz</li>
+            </ul>
+          </article>
+          <article class="phase">
+            <h3>Phase 7 — Intelligence Expansion</h3>
+            <ul>
+              <li>Market intelligence via Simons</li>
+              <li>Communication layer via Cato</li>
+              <li>Cross-agent coordination via Leo</li>
+              <li>Internal knowledge system</li>
+            </ul>
+          </article>
+          <article class="phase">
+            <h3>Phase 8 — Extended Interface</h3>
+            <ul>
+              <li>Voice interaction</li>
+              <li>Mobile-first experience</li>
+              <li>Expanded automation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="governance">
+      <div class="container">
+        <h2>Design and Governance Principles</h2>
+        <div class="card-grid two">
+          <article class="card">
+            <ul>
+              <li>Separation of responsibilities</li>
+              <li>Signal discipline</li>
+              <li>Transparency on data quality and sourcing</li>
+            </ul>
+          </article>
+          <article class="card">
+            <ul>
+              <li>Hybrid deterministic + AI architecture</li>
+              <li>Gradual automation with validation at each layer</li>
+              <li>Local-first infrastructure with selective cloud reasoning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>CraigClaw</strong> — Personal AI Intelligence Platform.</p>
+      <p>Operational focus: clear, decision-ready daily intelligence.</p>
+      <p>&copy; <span id="year"></span> CraigClaw</p>
     </div>
-    <div class="nav__actions">
-      <button class="nav__toggle" data-theme-toggle aria-label="Switch to light mode">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"/>
-          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-        </svg>
-      </button>
-      <button class="nav__hamburger" aria-label="Open menu" data-menu-toggle>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-      </button>
-    </div>
-  </div>
-  <!-- Mobile menu -->
-  <div class="nav__mobile" id="mobile-menu">
-    <a href="#about">About</a>
-    <a href="#abilities">Abilities</a>
-    <a href="#philosophy">Philosophy</a>
-    <a href="#workflows">Workflows</a>
-    <a href="#lab">Lab</a>
-  </div>
-</nav>
+  </footer>
 
-<!-- ===== HERO ===== -->
-<section class="hero" id="hero">
-  <div class="hero__bg" aria-hidden="true">
-    <canvas id="hero-canvas"></canvas>
-  </div>
-  <div class="hero__content">
-    <div class="hero__logo-mark">
-      <img src="./logo.jpg" alt="" class="hero__logo-img" width="120" height="120" aria-hidden="true">
-    </div>
-    <p class="hero__eyebrow">Personal AI Operating System</p>
-    <h1 class="hero__title">Craig<br><span class="hero__accent">Claw</span></h1>
-    <p class="hero__subtitle">A system for compounding intelligence — built at the intersection of financial services, AI product management, and relentless curiosity.</p>
-    <div class="hero__cta">
-      <a href="#about" class="btn btn--primary">Explore</a>
-      <a href="#philosophy" class="btn btn--ghost">Read the Philosophy</a>
-    </div>
-  </div>
-  <div class="hero__scroll" aria-hidden="true">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-  </div>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section class="section" id="about">
-  <div class="container">
-    <div class="section-grid section-grid--asymmetric">
-      <div class="section-grid__text">
-        <p class="section__eyebrow">What is Craig Claw</p>
-        <h2 class="section__title">Your personal AI command center</h2>
-        <p>Craig Claw is a purpose-built personal operating system — a framework for channeling AI tools, mental models, and structured workflows into one coherent practice.</p>
-        <p>It's not another chatbot wrapper. It's the system I use every day to research markets, build products, accelerate learning, and stay sharp in a profession where the rate of change is the only constant.</p>
-        <p>Named in the spirit of OpenClaw — the idea that the most powerful tool you can build is one that extends your own capabilities — Craig Claw is specific to my context: wealth management, AI product development, and the disciplined pursuit of compounding knowledge.</p>
-      </div>
-      <div class="section-grid__aside">
-        <div class="stat-card">
-          <div class="stat-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          </div>
-          <p class="stat-card__label">Built for</p>
-          <p class="stat-card__value">One Person</p>
-          <p class="stat-card__desc">Hyper-personalized to my domain, my tools, my goals.</p>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </div>
-          <p class="stat-card__label">Active since</p>
-          <p class="stat-card__value">2025</p>
-          <p class="stat-card__desc">Evolving daily with new capabilities and refinements.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== ABILITIES ===== -->
-<section class="section section--alt" id="abilities">
-  <div class="container">
-    <p class="section__eyebrow">Core Abilities</p>
-    <h2 class="section__title">What Craig Claw can do</h2>
-    <p class="section__intro">Each capability is a building block — composable, extensible, and designed to compound over time.</p>
-    <div class="abilities-grid">
-
-      <div class="ability-card">
-        <div class="ability-card__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        </div>
-        <h3 class="ability-card__title">Deep Research</h3>
-        <p class="ability-card__desc">Multi-source intelligence gathering across markets, companies, macro trends, and emerging technology — synthesized into actionable insight.</p>
-      </div>
-
-      <div class="ability-card">
-        <div class="ability-card__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-        </div>
-        <h3 class="ability-card__title">Financial Analysis</h3>
-        <p class="ability-card__desc">Equity analysis, portfolio evaluation, options strategy modeling, and market commentary — grounded in real data, not speculation.</p>
-      </div>
-
-      <div class="ability-card">
-        <div class="ability-card__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-        </div>
-        <h3 class="ability-card__title">AI Product Engineering</h3>
-        <p class="ability-card__desc">Prompt engineering, agent architecture, tool integration, and workflow automation — building systems that think alongside you.</p>
-      </div>
-
-      <div class="ability-card">
-        <div class="ability-card__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-        </div>
-        <h3 class="ability-card__title">Document Intelligence</h3>
-        <p class="ability-card__desc">Summarization, extraction, comparison, and generation across PDFs, spreadsheets, presentations, and regulatory filings.</p>
-      </div>
-
-      <div class="ability-card">
-        <div class="ability-card__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-        </div>
-        <h3 class="ability-card__title">Learning Acceleration</h3>
-        <p class="ability-card__desc">Structured study plans, concept breakdowns, spaced repetition prompts, and synthesis across domains — turning information into understanding.</p>
-      </div>
-
-      <div class="ability-card">
-        <div class="ability-card__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        </div>
-        <h3 class="ability-card__title">Workflow Automation</h3>
-        <p class="ability-card__desc">Recurring tasks, data pipelines, monitoring systems, and scheduled intelligence — the infrastructure of personal leverage.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== PHILOSOPHY ===== -->
-<section class="section" id="philosophy">
-  <div class="container">
-    <div class="philosophy-layout">
-      <div class="philosophy-header">
-        <p class="section__eyebrow">Philosophy</p>
-        <h2 class="section__title">Learning in the age of AI</h2>
-      </div>
-      <div class="philosophy-content">
-        <blockquote class="pullquote">
-          "The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn."
-          <cite>— Alvin Toffler</cite>
-        </blockquote>
-        <p>The most consequential shift in knowledge work isn't that AI can answer questions — it's that the <strong>cost of learning has collapsed</strong>. What used to require a course, a mentor, or a decade of trial and error can now be explored in an afternoon with the right tools and the right questions.</p>
-        <p>But speed without direction is just noise. Craig Claw exists because I believe the professionals who will thrive are those who build <strong>systems for compounding knowledge</strong> — not just consuming it.</p>
-        <div class="philosophy-principles">
-          <div class="principle">
-            <span class="principle__number">01</span>
-            <h3 class="principle__title">Curiosity as infrastructure</h3>
-            <p class="principle__text">Every question you ask an AI is a seed. Build a system to plant them deliberately, track what grows, and prune what doesn't.</p>
-          </div>
-          <div class="principle">
-            <span class="principle__number">02</span>
-            <h3 class="principle__title">Depth over breadth</h3>
-            <p class="principle__text">AI makes it trivially easy to skim a hundred topics. The edge comes from going deep — developing intuition that no model can replicate.</p>
-          </div>
-          <div class="principle">
-            <span class="principle__number">03</span>
-            <h3 class="principle__title">Output as proof of understanding</h3>
-            <p class="principle__text">Writing, building, teaching — these are how you convert information into knowledge. AI accelerates the loop, but you still have to close it.</p>
-          </div>
-          <div class="principle">
-            <span class="principle__number">04</span>
-            <h3 class="principle__title">Compound daily</h3>
-            <p class="principle__text">A 1% improvement in your system each day means you're 37x better in a year. The discipline of daily refinement is the real competitive advantage.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== WORKFLOWS ===== -->
-<section class="section section--alt" id="workflows">
-  <div class="container">
-    <p class="section__eyebrow">Productivity &amp; Skill-Building</p>
-    <h2 class="section__title">The daily practice</h2>
-    <p class="section__intro">Craig Claw isn't a single tool — it's a set of workflows that run in the background of a working life, each one designed to turn time into leverage.</p>
-    <div class="workflows-grid">
-
-      <div class="workflow-card">
-        <div class="workflow-card__number">01</div>
-        <h3 class="workflow-card__title">Morning Intelligence Brief</h3>
-        <p class="workflow-card__desc">A curated scan of markets, AI developments, and industry news — filtered through my priorities, delivered before the first meeting.</p>
-        <div class="workflow-card__tags">
-          <span class="tag">Markets</span>
-          <span class="tag">AI News</span>
-          <span class="tag">Automated</span>
-        </div>
-      </div>
-
-      <div class="workflow-card">
-        <div class="workflow-card__number">02</div>
-        <h3 class="workflow-card__title">Research Sprints</h3>
-        <p class="workflow-card__desc">Focused deep-dives into a company, sector, or technology — multi-agent research that produces structured output, not scattered notes.</p>
-        <div class="workflow-card__tags">
-          <span class="tag">Equity Research</span>
-          <span class="tag">Deep Dives</span>
-        </div>
-      </div>
-
-      <div class="workflow-card">
-        <div class="workflow-card__number">03</div>
-        <h3 class="workflow-card__title">Skill-Building Loops</h3>
-        <p class="workflow-card__desc">Structured learning sessions with AI as tutor — from options pricing theory to Japanese language practice to flight training concepts.</p>
-        <div class="workflow-card__tags">
-          <span class="tag">Learning</span>
-          <span class="tag">Spaced Repetition</span>
-        </div>
-      </div>
-
-      <div class="workflow-card">
-        <div class="workflow-card__number">04</div>
-        <h3 class="workflow-card__title">Weekly Review &amp; Synthesis</h3>
-        <p class="workflow-card__desc">Consolidating the week's research, conversations, and insights into a personal knowledge base that compounds over time.</p>
-        <div class="workflow-card__tags">
-          <span class="tag">Reflection</span>
-          <span class="tag">Knowledge Base</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== LAB / DEMO ===== -->
-<section class="section" id="lab">
-  <div class="container">
-    <p class="section__eyebrow">The Lab</p>
-    <h2 class="section__title">Neural field</h2>
-    <p class="section__intro">An interactive visualization of interconnected nodes — a metaphor for how knowledge compounds when ideas connect. Move your cursor to influence the field.</p>
-    <div class="lab-canvas-wrap">
-      <canvas id="lab-canvas"></canvas>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
-      <div class="footer__brand">
-        <img src="./logo.jpg" alt="Craig Claw" class="footer__logo-img" width="32" height="32">
-        <span>Craig Claw</span>
-      </div>
-      <p class="footer__statement">Built with conviction that the best investment you can make is in your own operating system.</p>
-      <p class="footer__contact">
-        <a href="mailto:Craig.Claw.AI@gmail.com">Craig.Claw.AI@gmail.com</a>
-      </p>
-      <div class="footer__links">
-        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
-      </div>
-      <p class="footer__copy">&copy; 2026 Craig Paskowitz. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-<script src="./app.js" defer></script>
-<script data-pplx-inline-edit>
-(function(){
-  if(window===window.top)return;
-  function inlineAll(orig,clone){
-    if(orig.nodeType!==1)return;
-    try{
-      var cs=getComputedStyle(orig);
-      var t='';
-      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
-      clone.style.cssText=t;
-    }catch(e){}
-    var oc=orig.children,cc=clone.children;
-    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
-  }
-  function stripExternal(clone){
-    var imgs=clone.querySelectorAll('img');
-    for(var i=0;i<imgs.length;i++){
-      var s=imgs[i].getAttribute('src');
-      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
-    }
-    var all=clone.querySelectorAll('*');
-    for(var i=0;i<all.length;i++){
-      var st=all[i].style.cssText;
-      if(st&&st.indexOf('url(')>=0){
-        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
-      }
-    }
-  }
-  window.addEventListener('message',function(e){
-    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
-    var scrollX=window.scrollX||window.pageXOffset||0;
-    var scrollY=window.scrollY||window.pageYOffset||0;
-    var w=window.innerWidth,h=window.innerHeight;
-    try{
-      var clone=document.documentElement.cloneNode(true);
-      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
-      for(var i=0;i<rm.length;i++){rm[i].remove();}
-      inlineAll(document.documentElement,clone);
-      stripExternal(clone);
-      var html=new XMLSerializer().serializeToString(clone);
-      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
-        +'<foreignObject width="100%" height="100%">'
-        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
-        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
-        +html+'</div></div></foreignObject></svg>';
-      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
-      var img=new Image();
-      img.onload=function(){
-        var c=document.createElement('canvas');c.width=w;c.height=h;
-        c.getContext('2d').drawImage(img,0,0);
-        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
-      };
-      img.onerror=function(){
-        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
-      };
-      img.src=svgUrl;
-    }catch(err){
-      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
-    }
-  });
-})();
-</script></body>
+  <script src="./app.js" defer></script>
+</body>
 </html>

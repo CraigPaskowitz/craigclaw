@@ -4,209 +4,117 @@
   <img src="logo.jpg" alt="CraigClaw Logo" width="200"/>
 </p>
 
----
+CraigClaw is a personal AI intelligence platform that turns fragmented inputs into clear, decision-ready insight. It runs on **OpenClaw**, a local-first agent framework, and is hosted on a dedicated **Mac mini** as an always-on system.
 
-## Overview
+The system continuously ingests, filters, and synthesizes information into a daily output called **“What Actually Matters.”**
 
-CraigClaw is a personal AI intelligence platform designed to turn fragmented inputs into clear, decision-ready insight.
+## Positioning
 
-It runs on **OpenClaw**, a local-first agent framework, and is hosted on a dedicated **Mac mini** as an always-on system. The platform continuously ingests, filters, and synthesizes information into a single daily output:
+CraigClaw is designed around:
+- Selectivity
+- Context
+- Judgment
+- Signal over noise
+- Controlled automation
+- Local-first infrastructure with cloud reasoning only where needed
 
-**What Actually Matters**
+## What It Produces
 
-The emphasis is on selectivity, context, and judgment—surfacing only the signals that rise above noise.
+The daily brief is designed to:
+- surface the highest-impact signals
+- explain why they matter in context
+- highlight meaningful shifts
+- identify what to monitor next
 
----
+## Architecture
 
-## What It Does
+- **Framework:** OpenClaw for agent orchestration and command layer
+- **Host:** Mac mini for persistent local runtime
+- **Local models:** Ollama / Qwen 2.5 for extraction and preprocessing
+- **Memory:** local embeddings for continuity
+- **Cloud judgment:** GPT-5.4 via Codex OAuth for prioritization, verification, and synthesis
+- **Interfaces:** Telegram for control, email for delivery
+- **Scheduling:** cron and LaunchAgent
 
-CraigClaw produces a daily intelligence brief that:
+### Flow
 
-* surfaces the highest-impact signals
-* explains why they matter in context
-* highlights meaningful shifts
-* identifies what to monitor next
+Inputs (Gmail first, RSS next)<br>
+→ Ellie for signal ingestion and filtering<br>
+→ local models for structured extraction<br>
+→ structured signal candidates<br>
+→ Fermi for judgment, verification, and synthesis<br>
+→ “What Actually Matters”<br>
+→ delivery via Telegram and email
 
-The output is designed for fast consumption and immediate relevance.
-
----
-
-## How It’s Built
-
-CraigClaw combines local infrastructure with cloud-based reasoning:
-
-* **Framework:** OpenClaw (agent orchestration and command layer)
-* **Host:** Mac mini (persistent runtime, always-on)
-* **Local models:** Ollama (Qwen 2.5 for extraction, embeddings for memory)
-* **Cloud model:** GPT-5.4 (judgment and synthesis via Codex OAuth)
-* **Interfaces:** Telegram (control surface), Email (delivery)
-* **Scheduling:** Cron and LaunchAgent
-
----
-
-## System Architecture
-
-```id="arch1"
-Inputs (Gmail → RSS soon)
-   ↓
-Ellie (signal ingestion + filtering)
-   ↓
-Local Models (Qwen via Ollama)
-   ↓
-Structured Signal Candidates
-   ↓
-Fermi (judgment, verification, synthesis)
-   ↓
-“What Actually Matters”
-   ↓
-Delivery (Telegram → Email)
-```
-
----
-
-## Agent Ecosystem
+## Multi-Agent Ecosystem
 
 <p align="center">
-  <img src="CraigClawCrew_4.26.26.png" alt="CraigClaw Agent Roster" width="700"/>
+  <img src="CraigClawCrew_4.26.26.png" alt="CraigClaw Agent Roster"/>
 </p>
 
-CraigClaw operates as a coordinated set of specialized agents, each responsible for a distinct layer of the workflow.
+### Active
 
-### Ellie — Signal Engine
+- **Ellie — Signal Engine:** deterministic ingestion and filtering, structured signal candidates
+- **Fermi — Orchestrator and Judgment Layer:** prioritization, ranking, verification, synthesis
+- **Memory Layer:** local embeddings for continuity across days
 
-* Ingests and filters inputs
-* Applies deterministic rules to reduce noise
-* Produces structured candidates
+### Planned / Emerging
 
-### Fermi — Orchestrator and Judgment Layer
-
-* Evaluates candidate signals
-* Prioritizes and ranks outputs
-* Verifies and synthesizes final brief
-
-### Memory Layer
-
-* Stores signals and context over time
-* Uses local embeddings (Ollama)
-* Enables continuity across days
-
-### Emerging Agents
-
-* **Cato** — communication drafting and structured outputs
-* **Simons** — domain and market intelligence
-* **Woz** — execution and simplification layer
-* **Leo** — coordination across agents and workflows
-
-The system is evolving toward a distributed model where agents specialize and collaborate.
-
----
-
-## Key Design Principles
-
-### Separation of Responsibilities
-
-Extraction, filtering, judgment, and synthesis are handled by distinct layers.
-
-### Signal Discipline
-
-Output is intentionally constrained to the most relevant signals.
-
-### Transparency
-
-Each brief reflects data quality and sourcing.
-
-### Hybrid Approach
-
-Deterministic logic where rules are stable; AI where judgment is required.
-
-### Gradual Automation
-
-Capabilities are introduced in stages, with validation at each layer.
-
----
+- **Cato:** communication drafting and structured outputs
+- **Simons:** domain and market intelligence
+- **Woz:** execution and simplification layer
+- **Leo:** coordination across agents and workflows
 
 ## Current Capabilities
 
-* Gmail ingestion (read-only)
-* Deterministic signal filtering
-* Local preprocessing (Qwen via Ollama)
-* AI-driven synthesis (GPT-5.4)
-* Daily intelligence brief generation
-* Telegram command interface (`/brief`)
-* Email delivery (manual send)
-* Memory indexing (local embeddings)
-* Always-on runtime (Mac mini + LaunchAgent)
-
----
+- Gmail ingestion (read-only)
+- deterministic signal filtering
+- local preprocessing with Qwen via Ollama
+- AI-driven synthesis with GPT-5.4
+- daily intelligence brief generation
+- Telegram `/brief` command
+- manual email delivery
+- memory indexing with local embeddings
+- always-on Mac mini runtime via LaunchAgent
 
 ## Output Structure
 
-Each briefing includes:
-
-* **Today’s Signal**
-* **Top Signals**
-* **What’s Changed**
-* **What to Watch**
-* **System Status**
-
----
+Each **“What Actually Matters”** brief includes:
+- Today’s Signal
+- Top Signals
+- What’s Changed
+- What to Watch
+- System Status
 
 ## Roadmap
 
 ### Phase 5 — Signal System (Current)
-
-* High-quality daily brief
-* Source-aware pipeline
-* Verification layer
-* Email delivery (manual → scheduled)
+- high-quality daily brief
+- source-aware pipeline
+- verification layer
+- email delivery, manual to scheduled
 
 ### Phase 6 — System Maturation
-
-* System health monitoring
-* Secure remote access
-* Memory consolidation
-* Execution layer (Woz)
+- system health monitoring
+- secure remote access
+- memory consolidation
+- execution layer, Woz
 
 ### Phase 7 — Intelligence Expansion
-
-* Market intelligence (Simons)
-* Communication layer (Cato)
-* Cross-agent coordination (Leo)
-* Internal knowledge system
+- market intelligence, Simons
+- communication layer, Cato
+- cross-agent coordination, Leo
+- internal knowledge system
 
 ### Phase 8 — Extended Interface
+- voice interaction
+- mobile-first experience
+- expanded automation
 
-* Voice interaction
-* Mobile-first experience
-* Expanded automation
+## Governance Philosophy
 
----
-
-## Strategic Perspective
-
-CraigClaw operates closer to the point where information becomes usable.
-
-The system emphasizes:
-
-* prioritization
-* synthesis
-* context
-* forward-looking signal detection
-
----
-
-## Status
-
-**Operational platform producing daily intelligence briefs**
-
-* Signal quality: High
-* Noise: Low
-* Delivery: Telegram and email
-* Automation: Controlled rollout
-* Infrastructure: Local-first, always-on
-
----
-
-## Closing
-
-CraigClaw narrows focus, reduces noise, and surfaces what matters without requiring constant input or prompting.
+- Separation of responsibilities
+- Signal discipline
+- Transparency on data quality and sourcing
+- Hybrid deterministic + AI architecture
+- Gradual automation with validation at each layer
