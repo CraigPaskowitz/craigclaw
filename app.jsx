@@ -368,11 +368,6 @@ function App() {
     root.setAttribute("data-density", tw.density);
   }, [tw]);
 
-  // Tweaks panel
-  useEffect(() => {
-    if (!window.TweaksPanel) return;
-  }, []);
-
   return (
     <>
       <StatusBar />

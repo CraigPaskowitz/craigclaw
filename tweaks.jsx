@@ -10,7 +10,7 @@ function CCTweaks({ tweaks, setTweaks }) {
   const set = (k, v) => setTweaks({ ...tweaks, [k]: v });
   return (
     <T title="Tweaks">
-      <S title="Theme">
+      <S label="Theme">
         <Rad
           label="Mode"
           value={tweaks.theme}
@@ -21,7 +21,7 @@ function CCTweaks({ tweaks, setTweaks }) {
           ]}
         />
       </S>
-      <S title="Density">
+      <S label="Density">
         <Rad
           label="Reading density"
           value={tweaks.density}

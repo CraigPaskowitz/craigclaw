@@ -40,6 +40,10 @@ html[data-theme="paper"] {
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
 html, body { background: var(--bg); color: var(--ink); }
 body {
   font-family: var(--sans);
@@ -767,4 +771,13 @@ html[data-density="compact"] .cc-hero .lede { font-size: 16px; }
   .cc-footer .meta { grid-template-columns: 1fr; }
   .cc-status .cc-page { grid-template-columns: auto 1fr; }
   .cc-status .cc-runtime, .cc-status .cc-issue { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
 }

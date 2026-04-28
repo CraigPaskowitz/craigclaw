@@ -101,8 +101,8 @@ window.CC_DATA = {
   ],
 
   brief: {
-    date: "Sun · Apr 26 · 2026",
-    issue: "№ 0317",
+    date: "Mon · Apr 28 · 2026",
+    issue: "№ 0319",
     runtime: "06:14:22 PT",
     todaysSignal: {
       headline: "Anthropic's enterprise contracts cross $4B run-rate; pricing held flat through Q1.",
