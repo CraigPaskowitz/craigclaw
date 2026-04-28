@@ -149,7 +149,7 @@ window.CC_DATA = {
     ],
     system: [
       { label: "Ellie", value: "OK", hue: 230 },
-      { label: "Ellie", value: "OK", hue: 8 },
+      { label: "Fermi", value: "OK", hue: 8 },
       { label: "Memory", value: "OK", hue: 280 },
       { label: "Cloud", value: "OK", hue: 200 },
       { label: "Telegram", value: "OK", hue: 145 },
@@ -163,19 +163,19 @@ window.CC_DATA = {
     { kind: "SYNTH", text: "AI synthesis with GPT-5.4 via Codex OAuth" },
     { kind: "PUBLISH", text: "Daily intelligence brief generation" },
     { kind: "CONTROL", text: "Telegram /brief command" },
-    { kind: "DELIVER", text: "Manual email delivery, scheduled in flight" },
+    { kind: "DELIVER", text: "Email delivery — manual today, scheduled automation in progress" },
     { kind: "MEMORY", text: "Continuity via local embeddings" },
     { kind: "RUNTIME", text: "Always-on Mac mini via LaunchAgent" },
   ],
 
   flow: [
-    { id: "in", label: "Source", note: "Gmail · RSS next" },
-    { id: "ellie", label: "Source", note: "Ingest & filter" },
-    { id: "local", label: "Source", note: "Qwen on Ollama" },
-    { id: "candidates", label: "Source", note: "Structured signals" },
-    { id: "fermi", label: "Source", note: "Judgment & synthesis" },
-    { id: "brief", label: "Source", note: "The brief" },
-    { id: "deliver", label: "Source", note: "Telegram · Email" },
+    { id: "in", label: "Input", note: "Gmail · RSS next" },
+    { id: "ellie", label: "Ingest", note: "Ingest & filter" },
+    { id: "local", label: "Extract", note: "Qwen on Ollama" },
+    { id: "candidates", label: "Structure", note: "Structured signals" },
+    { id: "fermi", label: "Judge", note: "Judgment & synthesis" },
+    { id: "brief", label: "Synthesize", note: "The brief" },
+    { id: "deliver", label: "Deliver", note: "Telegram · Email" },
   ],
 
   roadmap: [
