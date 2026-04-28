@@ -90,7 +90,7 @@ function Hero() {
           </div>
 
           <div className="cc-brief-tabs" role="tablist">
-            {[["today","Today's Signal"],["top","Today's Signal"],["changed","Today's Signal"],["watch","Today's Signal"]].map(([k,l]) => (
+            {[["today","Today's Signal"],["top","Top Signals"],["changed","What's Changed"],["watch","What to Watch"]].map(([k,l]) => (
               <button key={k} role="tab" aria-selected={tab === k} onClick={() => setTab(k)}>{l}</button>
             ))}
           </div>
@@ -225,8 +225,8 @@ function Crew() {
           <span className="cc-eyebrow">Multi-agent ecosystem · meet the crew</span>
           <h2>Six specialists. <em>One system that thinks.</em></h2>
           <p className="blurb">
-            CraigClaw isn't a single assistant. It's a coordinated crew with explicit role boundaries — each agent named after a person
-            whose discipline that role demands.
+            CraigClaw isn't a single assistant. It's a coordinated crew with explicit role boundaries — each agent named after someone
+            whose discipline defines that role.
           </p>
         </header>
 
@@ -350,7 +350,7 @@ function Footer() {
     <footer className="cc-page cc-footer">
       <p className="colophon">Less. <b>But better.</b> Every morning, before coffee.</p>
       <div className="meta">
-        <div><b>CraigClaw</b>Personal AI Intelligence Platform — built on OpenClaw.</div>
+        <div><b>CraigClaw</b>Personal Intelligence Platform — built on OpenClaw.</div>
         <div><b>Operations</b>Mac mini · LaunchAgent · cron · Telegram · Email</div>
         <div><b>Issue {D.brief.issue}</b>Last run {D.brief.runtime} · © 2026 CraigClaw</div>
       </div>
@@ -378,8 +378,8 @@ function App() {
       <StatusBar />
       <Masthead />
       <Hero />
-      <Architecture />
       <Crew />
+      <Architecture />
       <Capabilities />
       <Roadmap />
       <Principles />
