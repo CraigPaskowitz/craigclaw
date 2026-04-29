@@ -21,6 +21,7 @@ function Masthead() {
           <a href="#how">How It Works</a>
           <a href="#capabilities">Capabilities</a>
           <a href="#modules">Modules</a>
+          <a href="#crew">Crew</a>
           <a href="#direction">Direction</a>
         </nav>
       </div>
@@ -149,6 +150,25 @@ function Modules() {
   );
 }
 
+
+function Crew() {
+  return (
+    <section className="cc-section" id="crew">
+      <div className="cc-page">
+        <header>
+          <span className="cc-eyebrow">Crew snapshot</span>
+          <h2>{D.crew.title}</h2>
+          <p className="blurb">{D.crew.blurb}</p>
+        </header>
+        <figure className="cc-fold">
+          <img src={D.crew.image.src} alt={D.crew.image.alt} />
+          <figcaption>{D.crew.image.caption}</figcaption>
+        </figure>
+      </div>
+    </section>
+  );
+}
+
 function Direction() {
   return (
     <section className="cc-section" id="direction">
@@ -203,6 +223,7 @@ function App() {
       <HowItWorks />
       <Capabilities />
       <Modules />
+      <Crew />
       <Direction />
       <Footer />
       {window.CCTweaks && <window.CCTweaks tweaks={tw} setTweaks={setTw} />}
