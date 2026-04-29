@@ -21,7 +21,7 @@ window.CC_DATA = {
   ],
 
   why: {
-    intro: "Modern work and life create more inputs than one person can reasonably process. Email, news, calendars, messages, research, tools, and decisions all compete for attention.",
+    intro: "Modern life creates more inputs than one person can reasonably process. Email, news, calendars, messages, research, tools, and decisions all compete for attention.",
     points: [
       "What matters right now?",
       "What changed since the last pass?",
@@ -60,6 +60,16 @@ window.CC_DATA = {
     { name: "Simons", role: "Market and domain intelligence", description: "Builds focused threads and domain-specific monitoring." },
     { name: "Leo", role: "Coordination and system health", description: "Supports scheduling continuity and operational coordination." },
   ],
+
+  crew: {
+    title: "Crew snapshot",
+    blurb: "A quick visual of the module lineup and role split across the system.",
+    image: {
+      src: "CraigClawCrew_4.26.26.png",
+      alt: "CraigClaw crew map with module roles and responsibilities",
+      caption: "Crew map dated April 26, 2026. Role detail and responsibility split by module."
+    },
+  },
 
   direction: [
     {
