@@ -1,235 +1,98 @@
-// CraigClaw data — agents, brief content, capabilities, roadmap
-
 window.CC_DATA = {
-  agents: [
-    {
-      id: "fermi",
-      name: "Fermi",
-      role: "Orchestrator & Judgment",
-      status: "ACTIVE",
-      hue: 8,
-      tagline: "Prioritizes, verifies, synthesizes.",
-      duties: [
-        "Primary interface across chat and system surfaces",
-        "Orchestrates and routes work between agents",
-        "Applies system models and decision gates",
-        "Final synthesis and delivery of the brief",
-      ],
-      namedAfter: "Enrico Fermi",
-      namedNote: "Nuclear physicist known for clarity, efficiency, and the back-of-envelope estimate.",
-    },
-    {
-      id: "ellie",
-      name: "Ellie",
-      role: "Signal Engine",
-      status: "ACTIVE",
-      hue: 230,
-      tagline: "Hears the signal in the noise.",
-      duties: [
-        "Monitors ringfenced email and inbox candidates",
-        "Ingests newsletters, RSS, and structured feeds",
-        "Runs prep inputs against local models",
-        "Produces structured signal candidates for Fermi",
-      ],
-      namedAfter: "Ellie Arroway",
-      namedNote: "Astronomer in Contact who first heard a coherent signal from beyond.",
-    },
-    {
-      id: "cato",
-      name: "Cato",
-      role: "Communication Layer",
-      status: "PLANNED",
-      hue: 145,
-      tagline: "Drafts in your voice. Stays in the loop.",
-      duties: [
-        "Handles structured human email interactions",
-        "Drafts replies, follow-ups, and outbound notes",
-        "Leverages smart sending controls — human in the loop",
-        "Manages thread state across recipients",
-      ],
-      namedAfter: "Cato the Elder",
-      namedNote: "Roman statesman known for plain speech, diplomacy, and oratory.",
-    },
-    {
-      id: "woz",
-      name: "Woz",
-      role: "Execution Layer",
-      status: "PLANNED",
-      hue: 35,
-      tagline: "Builds and ships from natural language.",
-      duties: [
-        "Generates and reviews code from prompts",
-        "Orchestrates builds across local and platform models",
-        "Manages projects, iterations, and deployments",
-        "Closes the loop between intent and artifact",
-      ],
-      namedAfter: "Steve Wozniak",
-      namedNote: "Co-founder of Apple. Builder, innovator, problem solver.",
-    },
-    {
-      id: "simons",
-      name: "Simons",
-      role: "Market Intelligence",
-      status: "PLANNED",
-      hue: 200,
-      tagline: "Tracks markets. Builds research threads.",
-      duties: [
-        "Monitors macro and portfolio context",
-        "Builds long-running research and thesis tracking",
-        "Consumes Ellie's signal stream for diff detection",
-        "Constraint: no trading, no autonomous financial actions",
-      ],
-      namedAfter: "Jim Simons",
-      namedNote: "Mathematician and investor. Pioneer of quantitative strategies.",
-    },
-    {
-      id: "leo",
-      name: "Leo",
-      role: "Chief of Staff",
-      status: "PLANNED",
-      hue: 55,
-      tagline: "Owns scheduling. Prevents collisions.",
-      duties: [
-        "Owns scheduling and reminders",
-        "Surfaces the daily agenda",
-        "Coordinates work across agents",
-        "Ensures nothing falls through the cracks",
-      ],
-      namedAfter: "Leo McGarry",
-      namedNote: "Former White House Chief of Staff. Master of coordination.",
-    },
+  positioning: {
+    title: "A personal intelligence platform for clearer judgment and useful action.",
+    body: "CraigClaw brings together signals, workflows, memory, and automation into a local-first operating layer. It helps transform scattered information into structured briefs, focused alerts, and reusable knowledge.",
+  },
+
+  principles: [
+    "Signal over volume",
+    "Judgment before automation",
+    "Local-first",
+    "Human-directed",
+    "Persistent context",
+    "Reliable routines",
   ],
 
-  brief: {
-    date: "Mon · Apr 28 · 2026",
-    issue: "№ 0319",
-    runtime: "06:14:22 PT",
-    todaysSignal: {
-      headline: "Anthropic's enterprise contracts cross $4B run-rate; pricing held flat through Q1.",
-      body:
-        "Three independent reports converge on the same number this morning. The flat pricing is the more interesting datum — it implies they are still optimizing for placement over margin while the model-tier ceiling holds. Watch for a tier reshuffle if Opus-5 lands in May as expected.",
-      sources: ["theinformation.com", "ft.com", "bloomberg"],
-      delta: "+38% vs. last quarter brief",
-    },
-    top: [
-      {
-        tag: "MARKETS",
-        hue: 200,
-        text: "10Y holds 4.31% into Tuesday auction; bid-to-cover trailing 12-mo average. Dollar mixed.",
-        source: "macro feed · 14m",
-      },
-      {
-        tag: "AI · INFRA",
-        hue: 8,
-        text: "OpenAI rumored to spin up second Stargate cluster in Abilene; power siting confirmed via local filings.",
-        source: "trades · 41m",
-      },
-      {
-        tag: "PORTFOLIO",
-        hue: 55,
-        text: "Three of your tracked theses moved >2σ overnight. Notably: edge-inference compute, agent eval startups.",
-        source: "Simons preview · 1h",
-      },
-      {
-        tag: "PEOPLE",
-        hue: 145,
-        text: "K. Patel started at Granola. M. Chen left Cohere — public commentary suggests next role within 60d.",
-        source: "Ellie · 2h",
-      },
+  representativeOutputs: [
+    { label: "Example workflow", text: "Summarize the most important AI and market signals from the last day." },
+    { label: "Representative output", text: "Prepare a morning brief with weather, commute, logistics, and key news." },
+    { label: "Sample alert", text: "Send a focused alert only when a commute or household condition changes." },
+    { label: "Example knowledge page", text: "Turn a high-quality answer into a reusable knowledge note." },
+  ],
+
+  why: {
+    intro: "Modern work and life create more inputs than one person can reasonably process. Email, news, calendars, messages, research, tools, and decisions all compete for attention.",
+    points: [
+      "What matters right now?",
+      "What changed since the last pass?",
+      "What actually needs attention?",
+      "What should be remembered for later?",
+      "What should happen next?",
     ],
-    changed: [
-      "Mac mini runtime uptime: 41d → 41d 6h. No drift.",
-      "Newsletter intake widened to include 4 new sources after last week's review.",
-      "Verification false-positive rate: 6.1% → 4.8% week-over-week.",
-    ],
-    watch: [
-      "Fed minutes Wednesday — language on QT pace.",
-      "Anthropic developer day rumored mid-May.",
-      "Two thesis-tracked names report next Thursday.",
-    ],
-    system: [
-      { label: "Ellie", value: "OK", hue: 230 },
-      { label: "Fermi", value: "OK", hue: 8 },
-      { label: "Memory", value: "OK", hue: 280 },
-      { label: "Cloud", value: "OK", hue: 200 },
-      { label: "Telegram", value: "OK", hue: 145 },
+  },
+
+  howItWorks: {
+    blurb: "CraigClaw combines local infrastructure, AI models, structured workflows, and lightweight automation. Some processing runs locally; cloud models are used selectively where higher-order judgment or synthesis is useful.",
+    flow: [
+      { label: "Inputs", note: "Email, feeds, notes, messages, research sources" },
+      { label: "Signal extraction", note: "Filtering and structuring candidate signals" },
+      { label: "Judgment layer", note: "Prioritization, verification, synthesis" },
+      { label: "Knowledge layer", note: "Working memory and reusable knowledge artifacts" },
+      { label: "Delivery and action", note: "Briefs, alerts, summaries, and routine handoffs" },
     ],
   },
 
   capabilities: [
-    { kind: "INGEST", text: "Gmail ingestion, read-only" },
-    { kind: "FILTER", text: "Deterministic signal filtering" },
-    { kind: "EXTRACT", text: "Local preprocessing via Qwen 2.5 on Ollama" },
-    { kind: "SYNTH", text: "AI synthesis with GPT-5.4 via Codex OAuth" },
-    { kind: "PUBLISH", text: "Daily intelligence brief generation" },
-    { kind: "CONTROL", text: "Telegram /brief command" },
-    { kind: "DELIVER", text: "Email delivery — manual today, scheduled automation in progress" },
-    { kind: "MEMORY", text: "Continuity via local embeddings" },
-    { kind: "RUNTIME", text: "Always-on Mac mini via LaunchAgent" },
+    { kind: "Daily intelligence briefs", text: "Turns source material into concise, decision-oriented summaries." },
+    { kind: "Personal operating briefs", text: "Combines logistics and signals into a daily planning view." },
+    { kind: "Signal extraction", text: "Filters and structures high-value inputs from noisy streams." },
+    { kind: "Knowledge compilation", text: "Converts repeated signals and useful outputs into reusable pages." },
+    { kind: "Focused alerts", text: "Sends narrow updates only when they are useful." },
+    { kind: "Workflow automation", text: "Supports repeatable, bounded, human-directed routines." },
+    { kind: "Context and memory", text: "Maintains continuity across workflows over time." },
   ],
 
-  flow: [
-    { id: "in", label: "Input", note: "Gmail · RSS next" },
-    { id: "ellie", label: "Ingest", note: "Ingest & filter" },
-    { id: "local", label: "Extract", note: "Qwen on Ollama" },
-    { id: "candidates", label: "Structure", note: "Structured signals" },
-    { id: "fermi", label: "Judge", note: "Judgment & synthesis" },
-    { id: "brief", label: "Synthesize", note: "The brief" },
-    { id: "deliver", label: "Deliver", note: "Telegram · Email" },
+  modules: [
+    { name: "Fermi", role: "Orchestration and judgment", description: "Coordinates flows, applies decision logic, and synthesizes outputs." },
+    { name: "Ellie", role: "Signal ingestion and filtering", description: "Collects and structures candidate signals from source material." },
+    { name: "Cato", role: "Communication and structured drafting", description: "Supports communication workflows and high-quality draft generation." },
+    { name: "Woz", role: "Execution simplification", description: "Helps translate intent into structured execution steps." },
+    { name: "Simons", role: "Market and domain intelligence", description: "Builds focused threads and domain-specific monitoring." },
+    { name: "Leo", role: "Coordination and system health", description: "Supports scheduling continuity and operational coordination." },
   ],
 
-  roadmap: [
+  direction: [
     {
-      phase: "PHASE 5",
-      title: "Signal System",
-      status: "CURRENT",
-      bullets: [
-        "High-quality daily brief",
-        "Source-aware pipeline",
-        "Verification layer",
-        "Email delivery, manual to scheduled",
+      horizon: "Now",
+      items: [
+        "AI signal brief",
+        "Email delivery",
+        "Local-first runtime",
+        "Working memory",
+        "Scheduled workflows",
       ],
     },
     {
-      phase: "PHASE 6",
-      title: "System Maturation",
-      status: "NEXT",
-      bullets: [
-        "System health monitoring",
-        "Secure remote access",
-        "Memory consolidation",
-        "Execution layer — Woz",
+      horizon: "Next",
+      items: [
+        "Personal daily brief",
+        "Focused household alerts",
+        "Failure-only monitoring",
+        "Obsidian knowledge layer",
+        "Stronger source verification",
       ],
     },
     {
-      phase: "PHASE 7",
-      title: "Intelligence Expansion",
-      status: "PLANNED",
-      bullets: [
-        "Market intelligence — Simons",
-        "Communication layer — Cato",
-        "Cross-agent coordination — Leo",
-        "Internal knowledge system",
-      ],
-    },
-    {
-      phase: "PHASE 8",
-      title: "Extended Interface",
-      status: "PLANNED",
-      bullets: [
-        "Voice interaction",
-        "Mobile-first experience",
-        "Expanded automation",
+      horizon: "Later",
+      items: [
+        "Background knowledge consolidation",
+        "Richer agent specialization",
+        "Voice and mobile surfaces",
+        "Broader personal operating workflows",
       ],
     },
   ],
 
-  principles: [
-    { k: "01", t: "Selectivity", d: "Surface the highest-impact signals. Refuse to dump." },
-    { k: "02", t: "Context", d: "Explain why each signal matters and how it connects." },
-    { k: "03", t: "Judgment", d: "Apply verification, prioritization, and synthesis." },
-    { k: "04", t: "Signal over noise", d: "One number beats ten dashboards." },
-    { k: "05", t: "Controlled automation", d: "Gradual, validated, human-in-the-loop." },
-    { k: "06", t: "Local-first", d: "Cloud reasoning only where judgment is needed." },
-  ],
+  closing:
+    "CraigClaw is an evolving system for making information more usable. The goal is not to collect more inputs, but to create a practical layer for judgment, memory, and action.",
 };
