@@ -736,18 +736,6 @@ html[data-density="compact"] .cc-hero .lede { font-size: 16px; }
   width: 100%; height: 100%; object-fit: cover; object-position: center;
   filter: grayscale(0.05);
 }
-.cc-fold figcaption {
-  position: absolute;
-  inset: auto 0 0 0;
-  padding: 10px 14px;
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--paper);
-  background: linear-gradient(180deg, transparent, color-mix(in oklch, var(--bg), transparent 18%));
-}
-
 /* ===== Hover affordances on rows ===== */
 .cc-signal-row:hover { background: color-mix(in oklch, var(--bg-3), transparent 60%); }
 

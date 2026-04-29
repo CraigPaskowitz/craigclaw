@@ -162,7 +162,6 @@ function Crew() {
         </header>
         <figure className="cc-fold">
           <img src={D.crew.image.src} alt={D.crew.image.alt} />
-          <figcaption>{D.crew.image.caption}</figcaption>
         </figure>
       </div>
     </section>
